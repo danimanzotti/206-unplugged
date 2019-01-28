@@ -98,19 +98,120 @@ textarea {
    ========================================================================== */
 
 
+*{
+    box-sizing: border-box;
+}   
+
+/* -------------------- Header Styles -------------------- */
+.content-wrapper{
+    width: 960px;
+    margin: 0 auto;
+}
+
+header .content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.logo-wrapper{
+    width: 50%;
+}
+
+nav{
+    width: 50%;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row wrap;
+}
+   
+li{
+    display: inline;
+    margin: 0 0 0 32px;
+}
 
 
+/* -------------------- Newsletter Form style -------------------- */
+
+.newsletter-form .content-wrapper{
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.newsletter-form .form-description{
+    width: 50%;
+    padding: 0 80px 0 0;
+}
+
+.newsletter-form .form{
+    width: 50%;
+    padding: 0 0 0 80px;
+}
+
+.newsletter-form .form input{
+    width: 100%;
+} 
+
+/* -------------------- Features style -------------------- */
+
+.features-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.features-items article{
+    width: 33%;
+    padding: 0 60px;
+}
 
 
+/* -------------------- Review style -------------------- */
+
+.review .review-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.review-content div{
+    width: 50%;
+}
 
 
+/* -------------------- Footer style -------------------- */
 
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
+.social-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
 
+.social-icons p{
+    padding: 0 32px;
+}
 
-
-
-
+.copyright{
+    text-align: center;
+}
 
 
 /* ==========================================================================
