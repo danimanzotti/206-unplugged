@@ -132,14 +132,13 @@ ul{
    
 li{
     display: inline;
-    margin: 0 0 0 32px;
+    margin-left: 32px;
 }
 
 
 /* -------------------- Newsletter Form style -------------------- */
 
 .newsletter-form .content-wrapper{
-    padding: 0 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -148,12 +147,12 @@ li{
 
 .newsletter-form .form-description{
     width: 50%;
-    padding: 0 80px 0 0;
+    padding: 0 80px;
 }
 
 .newsletter-form .form{
     width: 50%;
-    padding: 0 0 0 80px;
+    padding: 0 80px;
 }
 
 .newsletter-form .form input{
@@ -188,6 +187,65 @@ li{
     width: 50%;
 }
 
+.review-content .left{
+    padding-left: 16px;
+}
+
+.review-content .right{
+    padding-left: 16px;
+}
+
+/* -------------------- Mission style -------------------- */
+
+.mission-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.mission-content div{
+    width: 50%;
+}
+
+.mission-content .left{
+    padding-right: 32px;
+}
+
+.mission-content .right{
+    padding-left: 32px;
+}
+
+/* -------------------- Contact section style -------------------- */
+
+.contact-section address{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.contact-section address div{
+    width: 50%;
+}
+
+.contact-section address div:last-of-type{
+    padding-left: 32px;
+}
+
+/* -------------------- FAQ style -------------------- */
+
+.questions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.questions div{
+    width: 47.5%;
+}
+
 
 /* -------------------- Footer style -------------------- */
 
@@ -198,15 +256,20 @@ li{
     flex-flow: row wrap;
 }
 
+.footer-content .contact{
+    width: 33%;
+}
+
+.footer-content .social{
+    width: 33%;
+    padding: 0 60px;
+}
+
 .social-icons{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-}
-
-.social-icons p{
-    padding: 0 32px;
 }
 
 .copyright{
@@ -300,16 +363,68 @@ li{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 769px) {
+/*Tablet styles here*/
+
+    /*Homepage*/
+
+    .content-wrapper{
+        width: 100%;
+        padding: 0 64px;
+    }
+
+    .newsletter-form .form-description{
+        width: 50%;
+        padding: 0;
+    }
+
+    .newsletter-form .form{
+        width: 50%;
+        padding-left: 32px;
+    }
+
+    .features-items article{
+        width: 50%;
+    }
+
+    .review-content .left{
+        padding-left: 8px;
+    }
+
+    .review-content .right{
+        padding-left: 8px;
+    }
+
+    .footer-content .contact{
+        width: 50%;
+    }
+
+    .footer-content .social{
+        width: 50%;
+    }
+        
+    /*About page*/
+
+    .mission-content .left{
+        padding-right: 20px;
+    }
+
+    .mission-content .right{
+        padding-left: 20px;
+    }
+
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
+@media only screen and (max-width: 361px) {
+/*Mobile styles here*/
+
+
+
+
+
+
+        }
+
 
 /* ==========================================================================
    Print styles.
