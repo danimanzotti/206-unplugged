@@ -97,12 +97,72 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   /* -------------------- General Styles -------------------- */
 
 *{
     box-sizing: border-box;
 }   
 
+html {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+body {
+       font-family: 'Open Sans', sans-serif;
+       font-size: 1em;
+       color: #e2e3ed;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.75em;
+    font-weight: normal;
+    margin: 0;
+
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25em;
+    font-weight: normal;
+    margin: 0;
+}
+
+h3, 
+h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875em;
+    font-weight: normal;
+    margin: 0;
+}
+
+p{
+    margin: 20px 0 0 0;
+    line-height: 1.5;
+}
+
+a {
+    color: #e2e3ed;
+    text-decoration: none;
+}
+
+ul{
+    margin: 20px 0;
+}
+
+li{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125em;
+    text-transform: uppercase;
+}
+
 /* -------------------- Header Styles -------------------- */
+
+header{
+    background-color: #202322;
+    padding: 24px 0;
+}
 .content-wrapper{
     width: 960px;
     margin: 0 auto;
@@ -136,8 +196,19 @@ li{
     margin-left: 32px;
 }
 
+/* -------------------- Hero style -------------------- */
+
+.hero-area{
+    background: #e8d1c8; 
+    padding: 48px 0 0;
+}
 
 /* -------------------- Newsletter Form style -------------------- */
+
+.newsletter-form{
+    background-color: #527158;
+    padding: 48px 0;
+}
 
 .newsletter-form .content-wrapper{
     display: flex;
@@ -154,14 +225,43 @@ li{
 .newsletter-form .form{
     width: 50%;
     padding: 0 80px;
+    margin-top: 30px;
 }
 
 .newsletter-form .form input{
     width: 100%;
 } 
+   
+input[type=text] {
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    color: #9d9ea4;
+    font-style: italic;
+    font-size: 1.125;
+    margin-top: 16px;
+}
+   
+  input[type=button] {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #2a423a;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.5em;
+    color: #e2e3ed;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
 
 /* -------------------- Features style -------------------- */
 
+.features{
+    background: #000;
+    padding: 104px 0 96px;
+}
 .features-items{
     display: flex;
     justify-content: space-between;
@@ -174,9 +274,16 @@ li{
     padding: 0 60px;
 }
 
+.features-items p{
+    text-align: center;
+}
 
 /* -------------------- Review style -------------------- */
 
+.review{
+    background-color: #2a423a;
+    padding: 104px 0;
+}
 .review .review-content{
     display: flex;
     justify-content: space-between;
@@ -186,6 +293,7 @@ li{
 
 .review-content div{
     width: 50%;
+    margin-top: 94px;
 }
 
 .review-content .left{
@@ -198,6 +306,13 @@ li{
 
 /* -------------------- Mission style -------------------- */
 
+.mission{
+    background-color: #527158;
+    padding: 104px 0;
+}
+.mission h1 {
+    font-size: 3em;
+}
 .mission-content{
     display: flex;
     justify-content: space-between;
@@ -219,11 +334,19 @@ li{
 
 /* -------------------- Contact section style -------------------- */
 
+.contact-section{
+    background-color: #2a423a;
+    padding: 104px 0;
+}
+.contact-section h2{
+    font-size: 3em;
+}
 .contact-section address{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
+    margin-top: 40px;
 }
 
 .contact-section address div{
@@ -234,31 +357,55 @@ li{
     padding-left: 32px;
 }
 
+address{
+    font-style: normal;
+}
+
 /* -------------------- FAQ style -------------------- */
 
+.faq{
+    background-color: #527158;
+    padding: 104px 0;
+}
+
+.faq h2{
+    font-size: 3em;
+}
+
+.faq h4{
+    font-size: 1.125em;
+}
 .questions{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap;
 }
 
 .questions div{
     width: 47.5%;
+    margin-top: 32px;
 }
 
 
 /* -------------------- Footer style -------------------- */
+
+footer{
+    background-color: #202322;
+    padding: 104px 0 16px 0;
+}
 
 .footer-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
+    text-align: center;
 }
 
 .footer-content .contact{
     width: 33%;
+    text-align: center;
 }
 
 .footer-content .social{
@@ -275,6 +422,7 @@ li{
 
 .copyright{
     text-align: center;
+    margin-top: 104px;
 }
 
 
@@ -374,14 +522,49 @@ li{
         padding: 0 64px;
     }
 
+    h3{
+        font-size: 1.5em;
+    }
+
+    p{
+        font-size: 0.875em;
+    }
+
+    .logo-wrapper a img{
+        width: 224px;
+    }
+
+    nav ul li{
+        font-size: 1em;
+    }
+
+    .hero-area{
+        padding-top: 94px;
+    }
+
+    .newsletter-form .content-wrapper{
+        align-items: flex-start;
+    }
+    
     .newsletter-form .form-description{
         width: 50%;
-        padding: 0;
+        padding: 0 32px 0 0;
     }
 
     .newsletter-form .form{
-        width: 50%;
-        padding-left: 32px;
+        padding: 0 0 0 32px;
+        margin: 0;
+    }
+
+    input[type=text] {
+        height: 40px;
+        font-size: 0.875em;
+    }
+
+    input[type=button] {
+        line-height: 40px;
+        font-size: 1.125em;
+        padding: 0;
     }
 
     .features-items article{
@@ -406,6 +589,10 @@ li{
         
     /*About page*/
 
+    .mission h1{
+        font-size: 2.25em;
+    }
+
     .mission-content .left{
         padding-right: 20px;
     }
@@ -414,10 +601,28 @@ li{
         padding-left: 20px;
     }
 
-    .contact-section address div{
-        width: 100%;
+    .contact-section h2{
+        font-size: 2.25em;
     }
 
+    .contact-section address{
+        align-items: flex-start;
+        margin-top: 104px;
+    }
+    .contact-section address div{
+        width: 50%;
+    }
+
+    /*About page*/
+
+    .faq h2{
+        font-size: 2.25em;
+    }
+
+    .faq h4{
+        font-size: 0.875em;
+    }
+    
 }
 
 @media only screen and (max-width: 361px) {
@@ -430,8 +635,32 @@ li{
         padding: 0 20px;
     }
 
+    h1{
+        font-size: 2.25em;
+    }
+
+    h2{
+        font-size: 1.875em;
+    }
+
+    h3{
+        font-size: 1.125em;
+    }
+
+    header{
+        padding: 0;
+    }
+
+    header .content-wrapper{
+        text-align: center;
+        padding:0;
+    }
+
     .logo-wrapper{
         width: 100%;
+        border-bottom: 1px solid #3a3a3a;
+        margin-top: 16px;
+        padding-bottom: 16px;
     }
     
     nav{
@@ -450,6 +679,9 @@ li{
         margin-left: 62px;
     }
 
+    .newsletter-form{
+        padding: 30 0 54 0;
+    }
     .newsletter-form .form-description{
         width: 100%;
     }
@@ -457,10 +689,26 @@ li{
     .newsletter-form .form{
         width: 100%;
         padding: 0;
+        margin-top: 40px;
     }
 
+    input[type=text] {
+        height: 50px;
+    }
+
+    input[type=button] {
+        line-height: 50px;
+    }
+
+    .features{
+        padding: 50px 0 68px 0;
+    }
     .features-items article{
         width: 100%;
+    }
+
+    .review{
+        padding: 50px 0;
     }
 
     .review-content div{
@@ -475,6 +723,14 @@ li{
         padding-left: 0;
     }
 
+    footer{
+        padding-top: 50px;
+    }
+
+    .social{
+        margin-top: 50px;
+    }
+
     .footer-content .contact{
         width: 100%;
     }
@@ -483,7 +739,22 @@ li{
         width: 100%;
     }
 
+    .copyright{
+        margin-top: 50px;
+    }
+
     /*About page*/
+
+    .mission{
+        padding: 50px 0;
+    }
+    .mission h1{
+        font-size: 1.875em; 
+    }
+
+    .mission-content{
+        padding-top: 30px;
+    }
 
     .mission-content div{
         width: 100%;
@@ -497,18 +768,38 @@ li{
         padding: 0;
     }
 
+    .contact-section{
+        padding: 50px 0;
+    }
+
+    .contact-section h2{
+        font-size: 1.875em;
+    }
+
+    .contact-section address{
+        margin-top: 20px;
+    }
     .contact-section address div:last-of-type{
         padding-left: 0;
+        margin-top: 20px;
     }
 
     /*FAQ page*/
 
+    .faq{
+        padding: 50px 0;
+    }
+
+    .faq h2{
+        font-size: 1.875em;
+    }
     .questions{
         display: block;
     }
 
     .questions div{
         width: 100%;
+        margin-top: 50px;
     }
 }
 
