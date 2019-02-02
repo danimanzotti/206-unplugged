@@ -196,6 +196,10 @@ li{
     margin-left: 32px;
 }
 
+img {
+    width: 100%;
+}
+
 /* -------------------- Hero style -------------------- */
 
 .hero-area{
@@ -264,7 +268,6 @@ input[type=text] {
     padding: 104px 0 96px;
     background: url(../img/features-bg-72.jpg) center no-repeat #e8d1c8;
     background-size: cover;
-    height: 600px;
 }
 
 .features-items{
@@ -299,10 +302,6 @@ input[type=text] {
 .review-content div{
     width: 50%;
     margin-top: 94px;
-}
-
-.review-content img {
-    width: 100%;
 }
 
 .review-content .left{
@@ -531,6 +530,9 @@ footer{
         padding: 0 64px;
     }
 
+    h1{
+        font-size: 3em;
+    }
     h3{
         font-size: 1.5em;
     }
@@ -580,8 +582,12 @@ footer{
         width: 50%;
     }
 
+    .review-content div{
+        margin-top: 20px;
+    }
+
     .review-content .left{
-        padding-left: 8px;
+        padding-right: 8px;
     }
 
     .review-content .right{
@@ -686,6 +692,10 @@ footer{
     
     nav ul li:last-of-type{
         margin-left: 62px;
+    }
+
+    .hero-area{
+        padding-top: 50px;
     }
 
     .newsletter-form{
