@@ -199,8 +199,10 @@ li{
 /* -------------------- Hero style -------------------- */
 
 .hero-area{
-    background: #e8d1c8; 
     padding: 48px 0 0;
+    background: url(../img/hero-72.jpg) center no-repeat #e8d1c8;
+    background-size: cover;
+    height: 600px;
 }
 
 /* -------------------- Newsletter Form style -------------------- */
@@ -259,9 +261,12 @@ input[type=text] {
 /* -------------------- Features style -------------------- */
 
 .features{
-    background: #000;
     padding: 104px 0 96px;
+    background: url(../img/features-bg-72.jpg) center no-repeat #e8d1c8;
+    background-size: cover;
+    height: 600px;
 }
+
 .features-items{
     display: flex;
     justify-content: space-between;
@@ -287,7 +292,7 @@ input[type=text] {
 .review .review-content{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-flow: row wrap;
 }
 
@@ -296,8 +301,12 @@ input[type=text] {
     margin-top: 94px;
 }
 
+.review-content img {
+    width: 100%;
+}
+
 .review-content .left{
-    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .review-content .right{
