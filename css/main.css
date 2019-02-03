@@ -270,6 +270,9 @@ input[type=text] {
     background-size: cover;
 }
 
+.features h2{
+    margin-bottom: 20px;
+}
 .features-items{
     display: flex;
     justify-content: space-between;
@@ -280,6 +283,11 @@ input[type=text] {
 .features-items article{
     width: 33%;
     padding: 0 60px;
+    margin-top: 40px;
+}
+
+.features i{
+    font-size: 3.75em;
 }
 
 .features-items p{
@@ -600,8 +608,16 @@ footer{
         padding: 0;
     }
 
+    .features h2{
+        margin-bottom: 0;
+    }
     .features-items article{
         width: 50%;
+        margin-top: 30px;
+    }
+
+    .features i{
+        font-size: 4.75em;
     }
 
     .review-content div{
@@ -750,6 +766,7 @@ footer{
     }
     .features-items article{
         width: 100%;
+        margin-top: 40px;
     }
 
     .review{
