@@ -340,6 +340,28 @@ input[type=text] {
     padding-left: 32px;
 }
 
+/* -------------------- Map section style -------------------- */
+
+.map{
+    padding-bottom: 75%;
+    height: 0;
+    position: relative;
+}
+
+.map figure{
+    margin: 0;
+
+}
+
+.map iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
 /* -------------------- Contact section style -------------------- */
 
 .contact-section{
