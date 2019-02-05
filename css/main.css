@@ -180,11 +180,11 @@ header .content-wrapper{
     width: 50%;
 }
 
-nav{
+header nav{
     width: 50%;
 }
 
-ul{
+header nav ul{
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -192,9 +192,17 @@ ul{
     padding: 0;
 }
    
-li{
+header nav ul li{
     display: inline;
     margin-left: 32px;
+}
+
+header nav ul li.active{
+    color: #527158;
+}
+
+header nav ul li:not(.active):hover{
+    text-decoration: underline;
 }
 
 img {
@@ -595,7 +603,7 @@ footer p{
         width: 224px;
     }
 
-    nav ul li{
+    header nav ul li{
         font-size: 1em;
     }
 
@@ -684,7 +692,7 @@ footer p{
 
     .contact-section address{
         align-items: flex-start;
-        margin-top: 104px;
+        margin-top: 60px;
     }
     .contact-section address div{
         width: 50%;
@@ -740,19 +748,19 @@ footer p{
         padding-bottom: 16px;
     }
     
-    nav{
+    header nav{
         width: 100%;
     }
 
-    ul{
+    header nav ul{
         justify-content: center;
     }
 
-    nav ul li:first-of-type{
+    header nav ul li:first-of-type{
         margin-left: 0;
     }
     
-    nav ul li:last-of-type{
+    header nav ul li:last-of-type{
         margin-left: 62px;
     }
 
@@ -878,7 +886,13 @@ footer p{
 
     .contact-section address{
         margin-top: 20px;
+        flex-direction: column;
     }
+
+    .contact-section address div{
+        width: 100%;
+    }
+
     .contact-section address div:last-of-type{
         padding-left: 0;
         margin-top: 20px;
